@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Servidor: localhost
--- Tiempo de generación: 21-04-2016 a las 00:25:05
+-- Tiempo de generación: 21-04-2016 a las 00:33:43
 -- Versión del servidor: 10.1.9-MariaDB
 -- Versión de PHP: 5.6.15
 
@@ -72,7 +72,12 @@ CREATE TABLE `at_comments` (
 INSERT INTO `at_comments` (`comment_ID`, `comment_post_ID`, `comment_author`, `comment_author_email`, `comment_author_url`, `comment_author_IP`, `comment_date`, `comment_date_gmt`, `comment_content`, `comment_karma`, `comment_approved`, `comment_agent`, `comment_type`, `comment_parent`, `user_id`) VALUES
 (1, 1, 'Sr WordPress', '', 'https://wordpress.org/', '', '2016-04-20 20:26:56', '2016-04-20 20:26:56', 'Hola, esto es un comentario.\nPara borrar un comentario simplemente accede y revisa los comentarios de la entrada. Ahí tendrás la opción de editarlo o borrarlo.', 0, '1', '', '', 0, 0),
 (2, 6, 'soydevcag', 'ariasgonzalezcamilo@gmail.com', '', '', '2016-04-20 21:07:12', '2016-04-20 21:07:12', 'Order status changed from draft to Pending Payment.', 0, '1', 'WooCommerce', 'order_note', 0, 0),
-(3, 7, 'soydevcag', 'ariasgonzalezcamilo@gmail.com', '', '::1', '2016-04-20 21:09:17', '2016-04-20 21:09:17', 'sdfgsd', 0, '1', 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.75 Safari/537.36', '', 0, 1);
+(3, 7, 'soydevcag', 'ariasgonzalezcamilo@gmail.com', '', '::1', '2016-04-20 21:09:17', '2016-04-20 21:09:17', 'sdfgsd', 0, '1', 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.75 Safari/537.36', '', 0, 1),
+(4, 27, 'WooCommerce', '', '', '', '2016-04-20 22:29:09', '2016-04-20 22:29:09', 'Pagos que se harán al entregar el producto. El estado del pedido ha cambiado de Pendiente de pago a Procesando.', 0, '1', 'WooCommerce', 'order_note', 0, 0),
+(5, 28, 'WooCommerce', '', '', '', '2016-04-20 22:31:05', '2016-04-20 22:31:05', 'Pagos que se harán al entregar el producto. El estado del pedido ha cambiado de Pendiente de pago a Procesando.', 0, '1', 'WooCommerce', 'order_note', 0, 0),
+(6, 28, 'WooCommerce', '', '', '', '2016-04-20 22:31:05', '2016-04-20 22:31:05', 'Stock del artículo 20 reducido de 3 a 2.', 0, '1', 'WooCommerce', 'order_note', 0, 0),
+(7, 29, 'WooCommerce', '', '', '', '2016-04-20 22:31:42', '2016-04-20 22:31:42', 'Pendientes de pago El estado del pedido ha cambiado de Pendiente de pago a En espera.', 0, '1', 'WooCommerce', 'order_note', 0, 0),
+(8, 29, 'WooCommerce', '', '', '', '2016-04-20 22:31:42', '2016-04-20 22:31:42', 'Stock del artículo 20 reducido de 2 a 1.', 0, '1', 'WooCommerce', 'order_note', 0, 0);
 
 -- --------------------------------------------------------
 
@@ -542,11 +547,11 @@ INSERT INTO `at_options` (`option_id`, `option_name`, `option_value`, `autoload`
 (331, '_transient_geoip_190.25.45.171', '', 'no'),
 (332, '_transient_timeout_geoip_503 Over Quota Error &nbsp; Over Quota This application is temporarily over its serving quota. Please try again later.', '1461789795', 'no'),
 (333, '_transient_geoip_503 Over Quota Error &nbsp; Over Quota This application is temporarily over its serving quota. Please try again later.', '', 'no'),
-(339, '_transient_orders-transient-version', '1461186432', 'yes'),
+(339, '_transient_orders-transient-version', '1461191502', 'yes'),
 (341, 'general_options', '', 'yes'),
 (342, 'pricing_options', '', 'yes'),
-(346, '_transient_product_query-transient-version', '1461191021', 'yes'),
-(347, '_transient_product-transient-version', '1461191021', 'yes'),
+(346, '_transient_product_query-transient-version', '1461191447', 'yes'),
+(347, '_transient_product-transient-version', '1461191447', 'yes'),
 (349, '_transient_timeout_wc_related_7', '1461272957', 'no'),
 (350, '_transient_wc_related_7', 'a:0:{}', 'no'),
 (351, '_transient_timeout_wc_cbp_65988e231c1fcafe6aeb43d83d9df0b7', '1463778557', 'no'),
@@ -575,27 +580,20 @@ INSERT INTO `at_options` (`option_id`, `option_name`, `option_value`, `autoload`
 (411, 'woocommerce_cheque_settings', 'a:1:{s:7:"enabled";s:2:"no";}', 'yes'),
 (412, 'woocommerce_cod_settings', 'a:1:{s:7:"enabled";s:3:"yes";}', 'yes'),
 (413, 'woocommerce_bacs_settings', 'a:1:{s:7:"enabled";s:3:"yes";}', 'yes'),
-(416, 'product_shipping_class_children', 'a:0:{}', 'yes'),
-(424, '_transient_timeout_wc_admin_report', '1461276620', 'no'),
-(425, '_transient_wc_admin_report', 'a:1:{s:32:"d936939c2f53fba029223c53b92db37c";a:0:{}}', 'no'),
 (434, '_site_transient_timeout_available_translations', '1461201317', 'yes');
 INSERT INTO `at_options` (`option_id`, `option_name`, `option_value`, `autoload`) VALUES
 (435, '_site_transient_available_translations', 'a:79:{s:2:"ar";a:8:{s:8:"language";s:2:"ar";s:7:"version";s:3:"4.5";s:7:"updated";s:19:"2016-04-10 15:55:55";s:12:"english_name";s:6:"Arabic";s:11:"native_name";s:14:"العربية";s:7:"package";s:59:"https://downloads.wordpress.org/translation/core/4.5/ar.zip";s:3:"iso";a:2:{i:1;s:2:"ar";i:2;s:3:"ara";}s:7:"strings";a:1:{s:8:"continue";s:16:"المتابعة";}}s:3:"ary";a:8:{s:8:"language";s:3:"ary";s:7:"version";s:3:"4.5";s:7:"updated";s:19:"2016-04-13 14:44:00";s:12:"english_name";s:15:"Moroccan Arabic";s:11:"native_name";s:31:"العربية المغربية";s:7:"package";s:60:"https://downloads.wordpress.org/translation/core/4.5/ary.zip";s:3:"iso";a:2:{i:1;s:2:"ar";i:3;s:3:"ary";}s:7:"strings";a:1:{s:8:"continue";s:16:"المتابعة";}}s:2:"az";a:8:{s:8:"language";s:2:"az";s:7:"version";s:3:"4.5";s:7:"updated";s:19:"2016-04-12 22:48:01";s:12:"english_name";s:11:"Azerbaijani";s:11:"native_name";s:16:"Azərbaycan dili";s:7:"package";s:59:"https://downloads.wordpress.org/translation/core/4.5/az.zip";s:3:"iso";a:2:{i:1;s:2:"az";i:2;s:3:"aze";}s:7:"strings";a:1:{s:8:"continue";s:5:"Davam";}}s:3:"azb";a:8:{s:8:"language";s:3:"azb";s:7:"version";s:5:"4.4.2";s:7:"updated";s:19:"2015-12-11 22:42:10";s:12:"english_name";s:17:"South Azerbaijani";s:11:"native_name";s:29:"گؤنئی آذربایجان";s:7:"package";s:62:"https://downloads.wordpress.org/translation/core/4.4.2/azb.zip";s:3:"iso";a:2:{i:1;s:2:"az";i:3;s:3:"azb";}s:7:"strings";a:1:{s:8:"continue";s:8:"Continue";}}s:5:"bg_BG";a:8:{s:8:"language";s:5:"bg_BG";s:7:"version";s:3:"4.5";s:7:"updated";s:19:"2016-04-12 14:55:51";s:12:"english_name";s:9:"Bulgarian";s:11:"native_name";s:18:"Български";s:7:"package";s:62:"https://downloads.wordpress.org/translation/core/4.5/bg_BG.zip";s:3:"iso";a:2:{i:1;s:2:"bg";i:2;s:3:"bul";}s:7:"strings";a:1:{s:8:"continue";s:22:"Продължение";}}s:5:"bn_BD";a:8:{s:8:"language";s:5:"bn_BD";s:7:"version";s:5:"4.4.2";s:7:"updated";s:19:"2016-02-08 13:17:04";s:12:"english_name";s:7:"Bengali";s:11:"native_name";s:15:"বাংলা";s:7:"package";s:64:"https://downloads.wordpress.org/translation/core/4.4.2/bn_BD.zip";s:3:"iso";a:1:{i:1;s:2:"bn";}s:7:"strings";a:1:{s:8:"continue";s:23:"এগিয়ে চল.";}}s:5:"bs_BA";a:8:{s:8:"language";s:5:"bs_BA";s:7:"version";s:3:"4.5";s:7:"updated";s:19:"2016-04-19 23:16:37";s:12:"english_name";s:7:"Bosnian";s:11:"native_name";s:8:"Bosanski";s:7:"package";s:62:"https://downloads.wordpress.org/translation/core/4.5/bs_BA.zip";s:3:"iso";a:2:{i:1;s:2:"bs";i:2;s:3:"bos";}s:7:"strings";a:1:{s:8:"continue";s:7:"Nastavi";}}s:2:"ca";a:8:{s:8:"language";s:2:"ca";s:7:"version";s:3:"4.5";s:7:"updated";s:19:"2016-04-11 06:38:51";s:12:"english_name";s:7:"Catalan";s:11:"native_name";s:7:"Català";s:7:"package";s:59:"https://downloads.wordpress.org/translation/core/4.5/ca.zip";s:3:"iso";a:2:{i:1;s:2:"ca";i:2;s:3:"cat";}s:7:"strings";a:1:{s:8:"continue";s:8:"Continua";}}s:3:"ceb";a:8:{s:8:"language";s:3:"ceb";s:7:"version";s:5:"4.4.2";s:7:"updated";s:19:"2016-02-16 15:34:57";s:12:"english_name";s:7:"Cebuano";s:11:"native_name";s:7:"Cebuano";s:7:"package";s:62:"https://downloads.wordpress.org/translation/core/4.4.2/ceb.zip";s:3:"iso";a:2:{i:2;s:3:"ceb";i:3;s:3:"ceb";}s:7:"strings";a:1:{s:8:"continue";s:7:"Padayun";}}s:5:"cs_CZ";a:8:{s:8:"language";s:5:"cs_CZ";s:7:"version";s:5:"4.4.2";s:7:"updated";s:19:"2016-02-11 18:32:36";s:12:"english_name";s:5:"Czech";s:11:"native_name";s:12:"Čeština‎";s:7:"package";s:64:"https://downloads.wordpress.org/translation/core/4.4.2/cs_CZ.zip";s:3:"iso";a:2:{i:1;s:2:"cs";i:2;s:3:"ces";}s:7:"strings";a:1:{s:8:"continue";s:11:"Pokračovat";}}s:2:"cy";a:8:{s:8:"language";s:2:"cy";s:7:"version";s:3:"4.5";s:7:"updated";s:19:"2016-04-11 14:21:06";s:12:"english_name";s:5:"Welsh";s:11:"native_name";s:7:"Cymraeg";s:7:"package";s:59:"https://downloads.wordpress.org/translation/core/4.5/cy.zip";s:3:"iso";a:2:{i:1;s:2:"cy";i:2;s:3:"cym";}s:7:"strings";a:1:{s:8:"continue";s:6:"Parhau";}}s:5:"da_DK";a:8:{s:8:"language";s:5:"da_DK";s:7:"version";s:3:"4.5";s:7:"updated";s:19:"2016-04-11 15:42:12";s:12:"english_name";s:6:"Danish";s:11:"native_name";s:5:"Dansk";s:7:"package";s:62:"https://downloads.wordpress.org/translation/core/4.5/da_DK.zip";s:3:"iso";a:2:{i:1;s:2:"da";i:2;s:3:"dan";}s:7:"strings";a:1:{s:8:"continue";s:12:"Forts&#230;t";}}s:14:"de_CH_informal";a:8:{s:8:"language";s:14:"de_CH_informal";s:7:"version";s:3:"4.5";s:7:"updated";s:19:"2016-04-12 20:03:25";s:12:"english_name";s:23:"(Switzerland, Informal)";s:11:"native_name";s:21:"Deutsch (Schweiz, Du)";s:7:"package";s:71:"https://downloads.wordpress.org/translation/core/4.5/de_CH_informal.zip";s:3:"iso";a:1:{i:1;s:2:"de";}s:7:"strings";a:1:{s:8:"continue";s:6:"Weiter";}}s:12:"de_DE_formal";a:8:{s:8:"language";s:12:"de_DE_formal";s:7:"version";s:3:"4.5";s:7:"updated";s:19:"2016-04-14 19:19:39";s:12:"english_name";s:15:"German (Formal)";s:11:"native_name";s:13:"Deutsch (Sie)";s:7:"package";s:69:"https://downloads.wordpress.org/translation/core/4.5/de_DE_formal.zip";s:3:"iso";a:1:{i:1;s:2:"de";}s:7:"strings";a:1:{s:8:"continue";s:10:"Fortfahren";}}s:5:"de_CH";a:8:{s:8:"language";s:5:"de_CH";s:7:"version";s:3:"4.5";s:7:"updated";s:19:"2016-04-12 19:26:41";s:12:"english_name";s:20:"German (Switzerland)";s:11:"native_name";s:17:"Deutsch (Schweiz)";s:7:"package";s:62:"https://downloads.wordpress.org/translation/core/4.5/de_CH.zip";s:3:"iso";a:1:{i:1;s:2:"de";}s:7:"strings";a:1:{s:8:"continue";s:10:"Fortfahren";}}s:5:"de_DE";a:8:{s:8:"language";s:5:"de_DE";s:7:"version";s:3:"4.5";s:7:"updated";s:19:"2016-04-14 19:19:21";s:12:"english_name";s:6:"German";s:11:"native_name";s:7:"Deutsch";s:7:"package";s:62:"https://downloads.wordpress.org/translation/core/4.5/de_DE.zip";s:3:"iso";a:1:{i:1;s:2:"de";}s:7:"strings";a:1:{s:8:"continue";s:10:"Fortfahren";}}s:2:"el";a:8:{s:8:"language";s:2:"el";s:7:"version";s:3:"4.5";s:7:"updated";s:19:"2016-04-13 21:14:17";s:12:"english_name";s:5:"Greek";s:11:"native_name";s:16:"Ελληνικά";s:7:"package";s:59:"https://downloads.wordpress.org/translation/core/4.5/el.zip";s:3:"iso";a:2:{i:1;s:2:"el";i:2;s:3:"ell";}s:7:"strings";a:1:{s:8:"continue";s:16:"Συνέχεια";}}s:5:"en_CA";a:8:{s:8:"language";s:5:"en_CA";s:7:"version";s:3:"4.5";s:7:"updated";s:19:"2016-04-10 05:23:57";s:12:"english_name";s:16:"English (Canada)";s:11:"native_name";s:16:"English (Canada)";s:7:"package";s:62:"https://downloads.wordpress.org/translation/core/4.5/en_CA.zip";s:3:"iso";a:3:{i:1;s:2:"en";i:2;s:3:"eng";i:3;s:3:"eng";}s:7:"strings";a:1:{s:8:"continue";s:8:"Continue";}}s:5:"en_NZ";a:8:{s:8:"language";s:5:"en_NZ";s:7:"version";s:3:"4.5";s:7:"updated";s:19:"2016-04-13 06:26:54";s:12:"english_name";s:21:"English (New Zealand)";s:11:"native_name";s:21:"English (New Zealand)";s:7:"package";s:62:"https://downloads.wordpress.org/translation/core/4.5/en_NZ.zip";s:3:"iso";a:3:{i:1;s:2:"en";i:2;s:3:"eng";i:3;s:3:"eng";}s:7:"strings";a:1:{s:8:"continue";s:8:"Continue";}}s:5:"en_ZA";a:8:{s:8:"language";s:5:"en_ZA";s:7:"version";s:5:"4.4.2";s:7:"updated";s:19:"2015-12-15 11:52:35";s:12:"english_name";s:22:"English (South Africa)";s:11:"native_name";s:22:"English (South Africa)";s:7:"package";s:64:"https://downloads.wordpress.org/translation/core/4.4.2/en_ZA.zip";s:3:"iso";a:3:{i:1;s:2:"en";i:2;s:3:"eng";i:3;s:3:"eng";}s:7:"strings";a:1:{s:8:"continue";s:8:"Continue";}}s:5:"en_AU";a:8:{s:8:"language";s:5:"en_AU";s:7:"version";s:3:"4.5";s:7:"updated";s:19:"2016-04-13 06:26:11";s:12:"english_name";s:19:"English (Australia)";s:11:"native_name";s:19:"English (Australia)";s:7:"package";s:62:"https://downloads.wordpress.org/translation/core/4.5/en_AU.zip";s:3:"iso";a:3:{i:1;s:2:"en";i:2;s:3:"eng";i:3;s:3:"eng";}s:7:"strings";a:1:{s:8:"continue";s:8:"Continue";}}s:5:"en_GB";a:8:{s:8:"language";s:5:"en_GB";s:7:"version";s:3:"4.5";s:7:"updated";s:19:"2016-04-13 12:51:07";s:12:"english_name";s:12:"English (UK)";s:11:"native_name";s:12:"English (UK)";s:7:"package";s:62:"https://downloads.wordpress.org/translation/core/4.5/en_GB.zip";s:3:"iso";a:3:{i:1;s:2:"en";i:2;s:3:"eng";i:3;s:3:"eng";}s:7:"strings";a:1:{s:8:"continue";s:8:"Continue";}}s:2:"eo";a:8:{s:8:"language";s:2:"eo";s:7:"version";s:3:"4.5";s:7:"updated";s:19:"2016-04-11 10:58:49";s:12:"english_name";s:9:"Esperanto";s:11:"native_name";s:9:"Esperanto";s:7:"package";s:59:"https://downloads.wordpress.org/translation/core/4.5/eo.zip";s:3:"iso";a:2:{i:1;s:2:"eo";i:2;s:3:"epo";}s:7:"strings";a:1:{s:8:"continue";s:8:"Daŭrigi";}}s:5:"es_MX";a:8:{s:8:"language";s:5:"es_MX";s:7:"version";s:3:"4.5";s:7:"updated";s:19:"2016-04-12 21:06:55";s:12:"english_name";s:16:"Spanish (Mexico)";s:11:"native_name";s:19:"Español de México";s:7:"package";s:62:"https://downloads.wordpress.org/translation/core/4.5/es_MX.zip";s:3:"iso";a:2:{i:1;s:2:"es";i:2;s:3:"spa";}s:7:"strings";a:1:{s:8:"continue";s:9:"Continuar";}}s:5:"es_GT";a:8:{s:8:"language";s:5:"es_GT";s:7:"version";s:3:"4.5";s:7:"updated";s:19:"2016-04-13 12:43:00";s:12:"english_name";s:19:"Spanish (Guatemala)";s:11:"native_name";s:21:"Español de Guatemala";s:7:"package";s:62:"https://downloads.wordpress.org/translation/core/4.5/es_GT.zip";s:3:"iso";a:2:{i:1;s:2:"es";i:2;s:3:"spa";}s:7:"strings";a:1:{s:8:"continue";s:9:"Continuar";}}s:5:"es_CL";a:8:{s:8:"language";s:5:"es_CL";s:7:"version";s:3:"4.5";s:7:"updated";s:19:"2016-04-13 01:09:28";s:12:"english_name";s:15:"Spanish (Chile)";s:11:"native_name";s:17:"Español de Chile";s:7:"package";s:62:"https://downloads.wordpress.org/translation/core/4.5/es_CL.zip";s:3:"iso";a:2:{i:1;s:2:"es";i:2;s:3:"spa";}s:7:"strings";a:1:{s:8:"continue";s:9:"Continuar";}}s:5:"es_ES";a:8:{s:8:"language";s:5:"es_ES";s:7:"version";s:3:"4.5";s:7:"updated";s:19:"2016-04-13 08:02:56";s:12:"english_name";s:15:"Spanish (Spain)";s:11:"native_name";s:8:"Español";s:7:"package";s:62:"https://downloads.wordpress.org/translation/core/4.5/es_ES.zip";s:3:"iso";a:1:{i:1;s:2:"es";}s:7:"strings";a:1:{s:8:"continue";s:9:"Continuar";}}s:5:"es_VE";a:8:{s:8:"language";s:5:"es_VE";s:7:"version";s:5:"4.4.2";s:7:"updated";s:19:"2016-01-13 06:14:13";s:12:"english_name";s:19:"Spanish (Venezuela)";s:11:"native_name";s:21:"Español de Venezuela";s:7:"package";s:64:"https://downloads.wordpress.org/translation/core/4.4.2/es_VE.zip";s:3:"iso";a:2:{i:1;s:2:"es";i:2;s:3:"spa";}s:7:"strings";a:1:{s:8:"continue";s:9:"Continuar";}}s:5:"es_CO";a:8:{s:8:"language";s:5:"es_CO";s:7:"version";s:6:"4.3-RC";s:7:"updated";s:19:"2015-08-04 06:10:33";s:12:"english_name";s:18:"Spanish (Colombia)";s:11:"native_name";s:20:"Español de Colombia";s:7:"package";s:65:"https://downloads.wordpress.org/translation/core/4.3-RC/es_CO.zip";s:3:"iso";a:2:{i:1;s:2:"es";i:2;s:3:"spa";}s:7:"strings";a:1:{s:8:"continue";s:9:"Continuar";}}s:5:"es_PE";a:8:{s:8:"language";s:5:"es_PE";s:7:"version";s:3:"4.5";s:7:"updated";s:19:"2016-04-16 17:35:43";s:12:"english_name";s:14:"Spanish (Peru)";s:11:"native_name";s:17:"Español de Perú";s:7:"package";s:62:"https://downloads.wordpress.org/translation/core/4.5/es_PE.zip";s:3:"iso";a:2:{i:1;s:2:"es";i:2;s:3:"spa";}s:7:"strings";a:1:{s:8:"continue";s:9:"Continuar";}}s:5:"es_AR";a:8:{s:8:"language";s:5:"es_AR";s:7:"version";s:3:"4.5";s:7:"updated";s:19:"2016-04-19 21:32:12";s:12:"english_name";s:19:"Spanish (Argentina)";s:11:"native_name";s:21:"Español de Argentina";s:7:"package";s:62:"https://downloads.wordpress.org/translation/core/4.5/es_AR.zip";s:3:"iso";a:2:{i:1;s:2:"es";i:2;s:3:"spa";}s:7:"strings";a:1:{s:8:"continue";s:9:"Continuar";}}s:2:"et";a:8:{s:8:"language";s:2:"et";s:7:"version";s:3:"4.5";s:7:"updated";s:19:"2016-04-12 11:11:25";s:12:"english_name";s:8:"Estonian";s:11:"native_name";s:5:"Eesti";s:7:"package";s:59:"https://downloads.wordpress.org/translation/core/4.5/et.zip";s:3:"iso";a:2:{i:1;s:2:"et";i:2;s:3:"est";}s:7:"strings";a:1:{s:8:"continue";s:6:"Jätka";}}s:2:"eu";a:8:{s:8:"language";s:2:"eu";s:7:"version";s:3:"4.5";s:7:"updated";s:19:"2016-04-13 07:34:31";s:12:"english_name";s:6:"Basque";s:11:"native_name";s:7:"Euskara";s:7:"package";s:59:"https://downloads.wordpress.org/translation/core/4.5/eu.zip";s:3:"iso";a:2:{i:1;s:2:"eu";i:2;s:3:"eus";}s:7:"strings";a:1:{s:8:"continue";s:8:"Jarraitu";}}s:5:"fa_IR";a:8:{s:8:"language";s:5:"fa_IR";s:7:"version";s:5:"4.4.2";s:7:"updated";s:19:"2016-01-31 19:24:20";s:12:"english_name";s:7:"Persian";s:11:"native_name";s:10:"فارسی";s:7:"package";s:64:"https://downloads.wordpress.org/translation/core/4.4.2/fa_IR.zip";s:3:"iso";a:2:{i:1;s:2:"fa";i:2;s:3:"fas";}s:7:"strings";a:1:{s:8:"continue";s:10:"ادامه";}}s:2:"fi";a:8:{s:8:"language";s:2:"fi";s:7:"version";s:3:"4.5";s:7:"updated";s:19:"2016-04-10 18:44:50";s:12:"english_name";s:7:"Finnish";s:11:"native_name";s:5:"Suomi";s:7:"package";s:59:"https://downloads.wordpress.org/translation/core/4.5/fi.zip";s:3:"iso";a:2:{i:1;s:2:"fi";i:2;s:3:"fin";}s:7:"strings";a:1:{s:8:"continue";s:5:"Jatka";}}s:5:"fr_CA";a:8:{s:8:"language";s:5:"fr_CA";s:7:"version";s:3:"4.5";s:7:"updated";s:19:"2016-04-11 14:59:03";s:12:"english_name";s:15:"French (Canada)";s:11:"native_name";s:19:"Français du Canada";s:7:"package";s:62:"https://downloads.wordpress.org/translation/core/4.5/fr_CA.zip";s:3:"iso";a:2:{i:1;s:2:"fr";i:2;s:3:"fra";}s:7:"strings";a:1:{s:8:"continue";s:9:"Continuer";}}s:5:"fr_BE";a:8:{s:8:"language";s:5:"fr_BE";s:7:"version";s:3:"4.5";s:7:"updated";s:19:"2016-04-11 07:33:47";s:12:"english_name";s:16:"French (Belgium)";s:11:"native_name";s:21:"Français de Belgique";s:7:"package";s:62:"https://downloads.wordpress.org/translation/core/4.5/fr_BE.zip";s:3:"iso";a:2:{i:1;s:2:"fr";i:2;s:3:"fra";}s:7:"strings";a:1:{s:8:"continue";s:9:"Continuer";}}s:5:"fr_FR";a:8:{s:8:"language";s:5:"fr_FR";s:7:"version";s:3:"4.5";s:7:"updated";s:19:"2016-04-20 10:12:40";s:12:"english_name";s:15:"French (France)";s:11:"native_name";s:9:"Français";s:7:"package";s:62:"https://downloads.wordpress.org/translation/core/4.5/fr_FR.zip";s:3:"iso";a:1:{i:1;s:2:"fr";}s:7:"strings";a:1:{s:8:"continue";s:9:"Continuer";}}s:2:"gd";a:8:{s:8:"language";s:2:"gd";s:7:"version";s:5:"4.3.3";s:7:"updated";s:19:"2015-09-24 15:25:30";s:12:"english_name";s:15:"Scottish Gaelic";s:11:"native_name";s:9:"Gàidhlig";s:7:"package";s:61:"https://downloads.wordpress.org/translation/core/4.3.3/gd.zip";s:3:"iso";a:3:{i:1;s:2:"gd";i:2;s:3:"gla";i:3;s:3:"gla";}s:7:"strings";a:1:{s:8:"continue";s:15:"Lean air adhart";}}s:5:"gl_ES";a:8:{s:8:"language";s:5:"gl_ES";s:7:"version";s:3:"4.5";s:7:"updated";s:19:"2016-04-13 01:36:32";s:12:"english_name";s:8:"Galician";s:11:"native_name";s:6:"Galego";s:7:"package";s:62:"https://downloads.wordpress.org/translation/core/4.5/gl_ES.zip";s:3:"iso";a:2:{i:1;s:2:"gl";i:2;s:3:"glg";}s:7:"strings";a:1:{s:8:"continue";s:9:"Continuar";}}s:3:"haz";a:8:{s:8:"language";s:3:"haz";s:7:"version";s:5:"4.4.2";s:7:"updated";s:19:"2015-12-05 00:59:09";s:12:"english_name";s:8:"Hazaragi";s:11:"native_name";s:15:"هزاره گی";s:7:"package";s:62:"https://downloads.wordpress.org/translation/core/4.4.2/haz.zip";s:3:"iso";a:1:{i:3;s:3:"haz";}s:7:"strings";a:1:{s:8:"continue";s:10:"ادامه";}}s:5:"he_IL";a:8:{s:8:"language";s:5:"he_IL";s:7:"version";s:3:"4.5";s:7:"updated";s:19:"2016-04-16 13:14:11";s:12:"english_name";s:6:"Hebrew";s:11:"native_name";s:16:"עִבְרִית";s:7:"package";s:62:"https://downloads.wordpress.org/translation/core/4.5/he_IL.zip";s:3:"iso";a:1:{i:1;s:2:"he";}s:7:"strings";a:1:{s:8:"continue";s:12:"להמשיך";}}s:5:"hi_IN";a:8:{s:8:"language";s:5:"hi_IN";s:7:"version";s:3:"4.5";s:7:"updated";s:19:"2016-04-13 05:38:21";s:12:"english_name";s:5:"Hindi";s:11:"native_name";s:18:"हिन्दी";s:7:"package";s:62:"https://downloads.wordpress.org/translation/core/4.5/hi_IN.zip";s:3:"iso";a:2:{i:1;s:2:"hi";i:2;s:3:"hin";}s:7:"strings";a:1:{s:8:"continue";s:12:"जारी";}}s:2:"hr";a:8:{s:8:"language";s:2:"hr";s:7:"version";s:3:"4.5";s:7:"updated";s:19:"2016-04-11 11:36:25";s:12:"english_name";s:8:"Croatian";s:11:"native_name";s:8:"Hrvatski";s:7:"package";s:59:"https://downloads.wordpress.org/translation/core/4.5/hr.zip";s:3:"iso";a:2:{i:1;s:2:"hr";i:2;s:3:"hrv";}s:7:"strings";a:1:{s:8:"continue";s:7:"Nastavi";}}s:5:"hu_HU";a:8:{s:8:"language";s:5:"hu_HU";s:7:"version";s:5:"4.4.2";s:7:"updated";s:19:"2016-02-03 14:37:42";s:12:"english_name";s:9:"Hungarian";s:11:"native_name";s:6:"Magyar";s:7:"package";s:64:"https://downloads.wordpress.org/translation/core/4.4.2/hu_HU.zip";s:3:"iso";a:2:{i:1;s:2:"hu";i:2;s:3:"hun";}s:7:"strings";a:1:{s:8:"continue";s:7:"Tovább";}}s:2:"hy";a:8:{s:8:"language";s:2:"hy";s:7:"version";s:5:"4.4.2";s:7:"updated";s:19:"2016-02-04 07:13:54";s:12:"english_name";s:8:"Armenian";s:11:"native_name";s:14:"Հայերեն";s:7:"package";s:61:"https://downloads.wordpress.org/translation/core/4.4.2/hy.zip";s:3:"iso";a:2:{i:1;s:2:"hy";i:2;s:3:"hye";}s:7:"strings";a:1:{s:8:"continue";s:20:"Շարունակել";}}s:5:"id_ID";a:8:{s:8:"language";s:5:"id_ID";s:7:"version";s:5:"4.4.2";s:7:"updated";s:19:"2015-12-21 16:17:50";s:12:"english_name";s:10:"Indonesian";s:11:"native_name";s:16:"Bahasa Indonesia";s:7:"package";s:64:"https://downloads.wordpress.org/translation/core/4.4.2/id_ID.zip";s:3:"iso";a:2:{i:1;s:2:"id";i:2;s:3:"ind";}s:7:"strings";a:1:{s:8:"continue";s:9:"Lanjutkan";}}s:5:"is_IS";a:8:{s:8:"language";s:5:"is_IS";s:7:"version";s:3:"4.5";s:7:"updated";s:19:"2016-04-11 00:36:03";s:12:"english_name";s:9:"Icelandic";s:11:"native_name";s:9:"Íslenska";s:7:"package";s:62:"https://downloads.wordpress.org/translation/core/4.5/is_IS.zip";s:3:"iso";a:2:{i:1;s:2:"is";i:2;s:3:"isl";}s:7:"strings";a:1:{s:8:"continue";s:6:"Áfram";}}s:5:"it_IT";a:8:{s:8:"language";s:5:"it_IT";s:7:"version";s:3:"4.5";s:7:"updated";s:19:"2016-04-13 07:56:36";s:12:"english_name";s:7:"Italian";s:11:"native_name";s:8:"Italiano";s:7:"package";s:62:"https://downloads.wordpress.org/translation/core/4.5/it_IT.zip";s:3:"iso";a:2:{i:1;s:2:"it";i:2;s:3:"ita";}s:7:"strings";a:1:{s:8:"continue";s:8:"Continua";}}s:2:"ja";a:8:{s:8:"language";s:2:"ja";s:7:"version";s:3:"4.5";s:7:"updated";s:19:"2016-04-13 07:25:35";s:12:"english_name";s:8:"Japanese";s:11:"native_name";s:9:"日本語";s:7:"package";s:59:"https://downloads.wordpress.org/translation/core/4.5/ja.zip";s:3:"iso";a:1:{i:1;s:2:"ja";}s:7:"strings";a:1:{s:8:"continue";s:9:"続ける";}}s:5:"ka_GE";a:8:{s:8:"language";s:5:"ka_GE";s:7:"version";s:3:"4.5";s:7:"updated";s:19:"2016-04-11 09:29:35";s:12:"english_name";s:8:"Georgian";s:11:"native_name";s:21:"ქართული";s:7:"package";s:62:"https://downloads.wordpress.org/translation/core/4.5/ka_GE.zip";s:3:"iso";a:2:{i:1;s:2:"ka";i:2;s:3:"kat";}s:7:"strings";a:1:{s:8:"continue";s:30:"გაგრძელება";}}s:5:"ko_KR";a:8:{s:8:"language";s:5:"ko_KR";s:7:"version";s:3:"4.5";s:7:"updated";s:19:"2016-04-11 13:18:25";s:12:"english_name";s:6:"Korean";s:11:"native_name";s:9:"한국어";s:7:"package";s:62:"https://downloads.wordpress.org/translation/core/4.5/ko_KR.zip";s:3:"iso";a:2:{i:1;s:2:"ko";i:2;s:3:"kor";}s:7:"strings";a:1:{s:8:"continue";s:6:"계속";}}s:5:"lt_LT";a:8:{s:8:"language";s:5:"lt_LT";s:7:"version";s:3:"4.5";s:7:"updated";s:19:"2016-04-10 06:34:16";s:12:"english_name";s:10:"Lithuanian";s:11:"native_name";s:15:"Lietuvių kalba";s:7:"package";s:62:"https://downloads.wordpress.org/translation/core/4.5/lt_LT.zip";s:3:"iso";a:2:{i:1;s:2:"lt";i:2;s:3:"lit";}s:7:"strings";a:1:{s:8:"continue";s:6:"Tęsti";}}s:5:"ms_MY";a:8:{s:8:"language";s:5:"ms_MY";s:7:"version";s:5:"4.4.2";s:7:"updated";s:19:"2016-01-28 05:41:39";s:12:"english_name";s:5:"Malay";s:11:"native_name";s:13:"Bahasa Melayu";s:7:"package";s:64:"https://downloads.wordpress.org/translation/core/4.4.2/ms_MY.zip";s:3:"iso";a:2:{i:1;s:2:"ms";i:2;s:3:"msa";}s:7:"strings";a:1:{s:8:"continue";s:8:"Teruskan";}}s:5:"my_MM";a:8:{s:8:"language";s:5:"my_MM";s:7:"version";s:6:"4.1.10";s:7:"updated";s:19:"2015-03-26 15:57:42";s:12:"english_name";s:17:"Myanmar (Burmese)";s:11:"native_name";s:15:"ဗမာစာ";s:7:"package";s:65:"https://downloads.wordpress.org/translation/core/4.1.10/my_MM.zip";s:3:"iso";a:2:{i:1;s:2:"my";i:2;s:3:"mya";}s:7:"strings";a:1:{s:8:"continue";s:54:"ဆက်လက်လုပ်ေဆာင်ပါ။";}}s:5:"nb_NO";a:8:{s:8:"language";s:5:"nb_NO";s:7:"version";s:3:"4.5";s:7:"updated";s:19:"2016-04-13 12:35:50";s:12:"english_name";s:19:"Norwegian (Bokmål)";s:11:"native_name";s:13:"Norsk bokmål";s:7:"package";s:62:"https://downloads.wordpress.org/translation/core/4.5/nb_NO.zip";s:3:"iso";a:2:{i:1;s:2:"nb";i:2;s:3:"nob";}s:7:"strings";a:1:{s:8:"continue";s:8:"Fortsett";}}s:5:"nl_NL";a:8:{s:8:"language";s:5:"nl_NL";s:7:"version";s:3:"4.5";s:7:"updated";s:19:"2016-04-12 12:37:45";s:12:"english_name";s:5:"Dutch";s:11:"native_name";s:10:"Nederlands";s:7:"package";s:62:"https://downloads.wordpress.org/translation/core/4.5/nl_NL.zip";s:3:"iso";a:2:{i:1;s:2:"nl";i:2;s:3:"nld";}s:7:"strings";a:1:{s:8:"continue";s:8:"Doorgaan";}}s:12:"nl_NL_formal";a:8:{s:8:"language";s:12:"nl_NL_formal";s:7:"version";s:5:"4.4.2";s:7:"updated";s:19:"2016-01-20 13:35:50";s:12:"english_name";s:14:"Dutch (Formal)";s:11:"native_name";s:20:"Nederlands (Formeel)";s:7:"package";s:71:"https://downloads.wordpress.org/translation/core/4.4.2/nl_NL_formal.zip";s:3:"iso";a:2:{i:1;s:2:"nl";i:2;s:3:"nld";}s:7:"strings";a:1:{s:8:"continue";s:8:"Doorgaan";}}s:5:"nn_NO";a:8:{s:8:"language";s:5:"nn_NO";s:7:"version";s:3:"4.5";s:7:"updated";s:19:"2016-04-11 07:36:04";s:12:"english_name";s:19:"Norwegian (Nynorsk)";s:11:"native_name";s:13:"Norsk nynorsk";s:7:"package";s:62:"https://downloads.wordpress.org/translation/core/4.5/nn_NO.zip";s:3:"iso";a:2:{i:1;s:2:"nn";i:2;s:3:"nno";}s:7:"strings";a:1:{s:8:"continue";s:9:"Hald fram";}}s:3:"oci";a:8:{s:8:"language";s:3:"oci";s:7:"version";s:5:"4.4.2";s:7:"updated";s:19:"2016-02-08 16:21:37";s:12:"english_name";s:7:"Occitan";s:11:"native_name";s:7:"Occitan";s:7:"package";s:62:"https://downloads.wordpress.org/translation/core/4.4.2/oci.zip";s:3:"iso";a:2:{i:1;s:2:"oc";i:2;s:3:"oci";}s:7:"strings";a:1:{s:8:"continue";s:9:"Contunhar";}}s:5:"pl_PL";a:8:{s:8:"language";s:5:"pl_PL";s:7:"version";s:5:"4.4.2";s:7:"updated";s:19:"2016-03-24 15:31:29";s:12:"english_name";s:6:"Polish";s:11:"native_name";s:6:"Polski";s:7:"package";s:64:"https://downloads.wordpress.org/translation/core/4.4.2/pl_PL.zip";s:3:"iso";a:2:{i:1;s:2:"pl";i:2;s:3:"pol";}s:7:"strings";a:1:{s:8:"continue";s:9:"Kontynuuj";}}s:2:"ps";a:8:{s:8:"language";s:2:"ps";s:7:"version";s:6:"4.1.10";s:7:"updated";s:19:"2015-03-29 22:19:48";s:12:"english_name";s:6:"Pashto";s:11:"native_name";s:8:"پښتو";s:7:"package";s:62:"https://downloads.wordpress.org/translation/core/4.1.10/ps.zip";s:3:"iso";a:2:{i:1;s:2:"ps";i:2;s:3:"pus";}s:7:"strings";a:1:{s:8:"continue";s:8:"دوام";}}s:5:"pt_BR";a:8:{s:8:"language";s:5:"pt_BR";s:7:"version";s:3:"4.5";s:7:"updated";s:19:"2016-04-15 14:13:00";s:12:"english_name";s:19:"Portuguese (Brazil)";s:11:"native_name";s:20:"Português do Brasil";s:7:"package";s:62:"https://downloads.wordpress.org/translation/core/4.5/pt_BR.zip";s:3:"iso";a:2:{i:1;s:2:"pt";i:2;s:3:"por";}s:7:"strings";a:1:{s:8:"continue";s:9:"Continuar";}}s:5:"pt_PT";a:8:{s:8:"language";s:5:"pt_PT";s:7:"version";s:3:"4.5";s:7:"updated";s:19:"2016-04-19 16:14:17";s:12:"english_name";s:21:"Portuguese (Portugal)";s:11:"native_name";s:10:"Português";s:7:"package";s:62:"https://downloads.wordpress.org/translation/core/4.5/pt_PT.zip";s:3:"iso";a:1:{i:1;s:2:"pt";}s:7:"strings";a:1:{s:8:"continue";s:9:"Continuar";}}s:5:"ro_RO";a:8:{s:8:"language";s:5:"ro_RO";s:7:"version";s:3:"4.5";s:7:"updated";s:19:"2016-04-12 14:49:03";s:12:"english_name";s:8:"Romanian";s:11:"native_name";s:8:"Română";s:7:"package";s:62:"https://downloads.wordpress.org/translation/core/4.5/ro_RO.zip";s:3:"iso";a:2:{i:1;s:2:"ro";i:2;s:3:"ron";}s:7:"strings";a:1:{s:8:"continue";s:9:"Continuă";}}s:5:"ru_RU";a:8:{s:8:"language";s:5:"ru_RU";s:7:"version";s:3:"4.5";s:7:"updated";s:19:"2016-04-13 18:04:14";s:12:"english_name";s:7:"Russian";s:11:"native_name";s:14:"Русский";s:7:"package";s:62:"https://downloads.wordpress.org/translation/core/4.5/ru_RU.zip";s:3:"iso";a:2:{i:1;s:2:"ru";i:2;s:3:"rus";}s:7:"strings";a:1:{s:8:"continue";s:20:"Продолжить";}}s:5:"sk_SK";a:8:{s:8:"language";s:5:"sk_SK";s:7:"version";s:3:"4.5";s:7:"updated";s:19:"2016-04-13 07:35:55";s:12:"english_name";s:6:"Slovak";s:11:"native_name";s:11:"Slovenčina";s:7:"package";s:62:"https://downloads.wordpress.org/translation/core/4.5/sk_SK.zip";s:3:"iso";a:2:{i:1;s:2:"sk";i:2;s:3:"slk";}s:7:"strings";a:1:{s:8:"continue";s:12:"Pokračovať";}}s:5:"sl_SI";a:8:{s:8:"language";s:5:"sl_SI";s:7:"version";s:5:"4.4.2";s:7:"updated";s:19:"2015-11-26 00:00:18";s:12:"english_name";s:9:"Slovenian";s:11:"native_name";s:13:"Slovenščina";s:7:"package";s:64:"https://downloads.wordpress.org/translation/core/4.4.2/sl_SI.zip";s:3:"iso";a:2:{i:1;s:2:"sl";i:2;s:3:"slv";}s:7:"strings";a:1:{s:8:"continue";s:10:"Nadaljujte";}}s:2:"sq";a:8:{s:8:"language";s:2:"sq";s:7:"version";s:3:"4.5";s:7:"updated";s:19:"2016-04-12 10:47:53";s:12:"english_name";s:8:"Albanian";s:11:"native_name";s:5:"Shqip";s:7:"package";s:59:"https://downloads.wordpress.org/translation/core/4.5/sq.zip";s:3:"iso";a:2:{i:1;s:2:"sq";i:2;s:3:"sqi";}s:7:"strings";a:1:{s:8:"continue";s:6:"Vazhdo";}}s:5:"sr_RS";a:8:{s:8:"language";s:5:"sr_RS";s:7:"version";s:3:"4.5";s:7:"updated";s:19:"2016-04-10 08:00:57";s:12:"english_name";s:7:"Serbian";s:11:"native_name";s:23:"Српски језик";s:7:"package";s:62:"https://downloads.wordpress.org/translation/core/4.5/sr_RS.zip";s:3:"iso";a:2:{i:1;s:2:"sr";i:2;s:3:"srp";}s:7:"strings";a:1:{s:8:"continue";s:14:"Настави";}}s:5:"sv_SE";a:8:{s:8:"language";s:5:"sv_SE";s:7:"version";s:3:"4.5";s:7:"updated";s:19:"2016-04-12 18:15:27";s:12:"english_name";s:7:"Swedish";s:11:"native_name";s:7:"Svenska";s:7:"package";s:62:"https://downloads.wordpress.org/translation/core/4.5/sv_SE.zip";s:3:"iso";a:2:{i:1;s:2:"sv";i:2;s:3:"swe";}s:7:"strings";a:1:{s:8:"continue";s:9:"Fortsätt";}}s:2:"th";a:8:{s:8:"language";s:2:"th";s:7:"version";s:5:"4.4.2";s:7:"updated";s:19:"2015-12-08 03:22:55";s:12:"english_name";s:4:"Thai";s:11:"native_name";s:9:"ไทย";s:7:"package";s:61:"https://downloads.wordpress.org/translation/core/4.4.2/th.zip";s:3:"iso";a:2:{i:1;s:2:"th";i:2;s:3:"tha";}s:7:"strings";a:1:{s:8:"continue";s:15:"ต่อไป";}}s:2:"tl";a:8:{s:8:"language";s:2:"tl";s:7:"version";s:5:"4.4.2";s:7:"updated";s:19:"2015-11-27 15:51:36";s:12:"english_name";s:7:"Tagalog";s:11:"native_name";s:7:"Tagalog";s:7:"package";s:61:"https://downloads.wordpress.org/translation/core/4.4.2/tl.zip";s:3:"iso";a:2:{i:1;s:2:"tl";i:2;s:3:"tgl";}s:7:"strings";a:1:{s:8:"continue";s:10:"Magpatuloy";}}s:5:"tr_TR";a:8:{s:8:"language";s:5:"tr_TR";s:7:"version";s:3:"4.5";s:7:"updated";s:19:"2016-04-11 10:48:51";s:12:"english_name";s:7:"Turkish";s:11:"native_name";s:8:"Türkçe";s:7:"package";s:62:"https://downloads.wordpress.org/translation/core/4.5/tr_TR.zip";s:3:"iso";a:2:{i:1;s:2:"tr";i:2;s:3:"tur";}s:7:"strings";a:1:{s:8:"continue";s:5:"Devam";}}s:5:"ug_CN";a:8:{s:8:"language";s:5:"ug_CN";s:7:"version";s:6:"4.1.10";s:7:"updated";s:19:"2015-03-26 16:45:38";s:12:"english_name";s:6:"Uighur";s:11:"native_name";s:9:"Uyƣurqə";s:7:"package";s:65:"https://downloads.wordpress.org/translation/core/4.1.10/ug_CN.zip";s:3:"iso";a:2:{i:1;s:2:"ug";i:2;s:3:"uig";}s:7:"strings";a:1:{s:8:"continue";s:26:"داۋاملاشتۇرۇش";}}s:2:"uk";a:8:{s:8:"language";s:2:"uk";s:7:"version";s:3:"4.5";s:7:"updated";s:19:"2016-04-14 23:32:23";s:12:"english_name";s:9:"Ukrainian";s:11:"native_name";s:20:"Українська";s:7:"package";s:59:"https://downloads.wordpress.org/translation/core/4.5/uk.zip";s:3:"iso";a:2:{i:1;s:2:"uk";i:2;s:3:"ukr";}s:7:"strings";a:1:{s:8:"continue";s:20:"Продовжити";}}s:2:"vi";a:8:{s:8:"language";s:2:"vi";s:7:"version";s:5:"4.4.2";s:7:"updated";s:19:"2015-12-09 01:01:25";s:12:"english_name";s:10:"Vietnamese";s:11:"native_name";s:14:"Tiếng Việt";s:7:"package";s:61:"https://downloads.wordpress.org/translation/core/4.4.2/vi.zip";s:3:"iso";a:2:{i:1;s:2:"vi";i:2;s:3:"vie";}s:7:"strings";a:1:{s:8:"continue";s:12:"Tiếp tục";}}s:5:"zh_TW";a:8:{s:8:"language";s:5:"zh_TW";s:7:"version";s:3:"4.5";s:7:"updated";s:19:"2016-04-12 09:08:07";s:12:"english_name";s:16:"Chinese (Taiwan)";s:11:"native_name";s:12:"繁體中文";s:7:"package";s:62:"https://downloads.wordpress.org/translation/core/4.5/zh_TW.zip";s:3:"iso";a:2:{i:1;s:2:"zh";i:2;s:3:"zho";}s:7:"strings";a:1:{s:8:"continue";s:6:"繼續";}}s:5:"zh_CN";a:8:{s:8:"language";s:5:"zh_CN";s:7:"version";s:3:"4.5";s:7:"updated";s:19:"2016-04-17 03:29:01";s:12:"english_name";s:15:"Chinese (China)";s:11:"native_name";s:12:"简体中文";s:7:"package";s:62:"https://downloads.wordpress.org/translation/core/4.5/zh_CN.zip";s:3:"iso";a:2:{i:1;s:2:"zh";i:2;s:3:"zho";}s:7:"strings";a:1:{s:8:"continue";s:6:"继续";}}}', 'yes'),
-(438, '_transient_timeout_wc_report_sales_by_date', '1461276989', 'no'),
-(439, '_transient_wc_report_sales_by_date', 'a:7:{s:32:"7d6c1ce28e7ac4e459ff3bb6933b2481";a:0:{}s:32:"ccf5facd2791b5b5f47eb5bba8043d82";a:0:{}s:32:"6d2838e8c263afcc6be4c3cc110c4af6";a:0:{}s:32:"77015ad255d900ac714efca02f448cad";N;s:32:"5fd7862b1b5652e002de66a4894955f7";a:0:{}s:32:"c35d89b5464543493b06553f01338706";a:0:{}s:32:"354925aa35ec0294a9a16f18ecd72299";a:0:{}}', 'no'),
-(440, '_transient_timeout_wc_report_customers', '1461276992', 'no'),
-(441, '_transient_wc_report_customers', 'a:4:{s:32:"5b257ade1952f94135e01fb5b67dff76";O:8:"stdClass":1:{s:12:"total_orders";s:1:"0";}s:32:"3da55e68872e3b8a1fa4ff1f31b0c42c";O:8:"stdClass":1:{s:12:"total_orders";s:1:"0";}s:32:"59ceec006b1d2ae91b8877f1308bbf6f";a:0:{}s:32:"293b5fd4629df6a7fa02d01091831e0b";a:0:{}}', 'no'),
-(442, '_transient_timeout_wc_report_taxes_by_code', '1461276998', 'no'),
-(443, '_transient_wc_report_taxes_by_code', 'a:1:{s:32:"c1e910167089cfe1eae179da8dbca9e4";a:0:{}}', 'no'),
 (444, 'account_page_options', '', 'yes'),
 (445, 'account_endpoint_options', '', 'yes'),
 (446, 'account_registration_options', '', 'yes'),
-(447, '_transient_woocommerce_cache_excluded_uris', 'a:6:{i:0;s:4:"p=17";i:1;s:7:"/carro/";i:2;s:4:"p=18";i:3;s:19:"/finalizar-comprar/";i:4;s:4:"p=19";i:5;s:11:"/mi-cuenta/";}', 'yes'),
 (449, 'product_cat_children', 'a:0:{}', 'yes'),
-(450, '_transient_is_multi_author', '0', 'yes'),
-(451, '_transient_timeout_wc_related_20', '1461277430', 'no'),
-(452, '_transient_wc_related_20', 'a:0:{}', 'no'),
-(453, '_transient_shipping-transient-version', '1461191036', 'yes');
+(453, '_transient_shipping-transient-version', '1461191319', 'yes'),
+(454, 'product_shipping_class_children', 'a:0:{}', 'yes'),
+(455, 'woocommerce_local_delivery_settings', 'a:7:{s:7:"enabled";s:3:"yes";s:5:"title";s:12:"Envío local";s:4:"type";s:5:"fixed";s:3:"fee";s:0:"";s:5:"codes";s:0:"";s:12:"availability";s:3:"all";s:9:"countries";s:0:"";}', 'yes'),
+(456, '_transient_woocommerce_cache_excluded_uris', 'a:6:{i:0;s:4:"p=17";i:1;s:7:"/carro/";i:2;s:4:"p=18";i:3;s:19:"/finalizar-comprar/";i:4;s:4:"p=19";i:5;s:11:"/mi-cuenta/";}', 'yes'),
+(465, '_transient_timeout_wc_related_20', '1461277887', 'no'),
+(466, '_transient_wc_related_20', 'a:0:{}', 'no'),
+(468, '_transient_is_multi_author', '0', 'yes');
 
 -- --------------------------------------------------------
 
@@ -719,11 +717,11 @@ INSERT INTO `at_postmeta` (`meta_id`, `post_id`, `meta_key`, `meta_value`) VALUE
 (106, 15, '_wp_attachment_context', 'site-icon'),
 (107, 15, '_wp_attachment_metadata', 'a:5:{s:5:"width";i:512;s:6:"height";i:512;s:4:"file";s:36:"2016/04/cropped-cropped-bufanda2.jpg";s:5:"sizes";a:8:{s:9:"thumbnail";a:4:{s:4:"file";s:36:"cropped-cropped-bufanda2-150x150.jpg";s:5:"width";i:150;s:6:"height";i:150;s:9:"mime-type";s:10:"image/jpeg";}s:6:"medium";a:4:{s:4:"file";s:36:"cropped-cropped-bufanda2-300x300.jpg";s:5:"width";i:300;s:6:"height";i:300;s:9:"mime-type";s:10:"image/jpeg";}s:14:"shop_thumbnail";a:4:{s:4:"file";s:36:"cropped-cropped-bufanda2-180x180.jpg";s:5:"width";i:180;s:6:"height";i:180;s:9:"mime-type";s:10:"image/jpeg";}s:12:"shop_catalog";a:4:{s:4:"file";s:36:"cropped-cropped-bufanda2-300x300.jpg";s:5:"width";i:300;s:6:"height";i:300;s:9:"mime-type";s:10:"image/jpeg";}s:13:"site_icon-270";a:4:{s:4:"file";s:36:"cropped-cropped-bufanda2-270x270.jpg";s:5:"width";i:270;s:6:"height";i:270;s:9:"mime-type";s:10:"image/jpeg";}s:13:"site_icon-192";a:4:{s:4:"file";s:36:"cropped-cropped-bufanda2-192x192.jpg";s:5:"width";i:192;s:6:"height";i:192;s:9:"mime-type";s:10:"image/jpeg";}s:13:"site_icon-180";a:4:{s:4:"file";s:36:"cropped-cropped-bufanda2-180x180.jpg";s:5:"width";i:180;s:6:"height";i:180;s:9:"mime-type";s:10:"image/jpeg";}s:12:"site_icon-32";a:4:{s:4:"file";s:34:"cropped-cropped-bufanda2-32x32.jpg";s:5:"width";i:32;s:6:"height";i:32;s:9:"mime-type";s:10:"image/jpeg";}}s:10:"image_meta";a:12:{s:8:"aperture";s:1:"0";s:6:"credit";s:0:"";s:6:"camera";s:0:"";s:7:"caption";s:0:"";s:17:"created_timestamp";s:1:"0";s:9:"copyright";s:0:"";s:12:"focal_length";s:1:"0";s:3:"iso";s:1:"0";s:13:"shutter_speed";s:1:"0";s:5:"title";s:0:"";s:11:"orientation";s:1:"0";s:8:"keywords";a:0:{}}}'),
 (108, 20, '_edit_last', '1'),
-(109, 20, '_edit_lock', '1461191038:1'),
+(109, 20, '_edit_lock', '1461191585:1'),
 (110, 20, '_thumbnail_id', '13'),
 (111, 20, '_visibility', 'visible'),
 (112, 20, '_stock_status', 'instock'),
-(113, 20, 'total_sales', '0'),
+(113, 20, 'total_sales', '3'),
 (114, 20, '_downloadable', 'no'),
 (115, 20, '_virtual', 'no'),
 (116, 20, '_tax_status', 'taxable'),
@@ -742,9 +740,9 @@ INSERT INTO `at_postmeta` (`meta_id`, `post_id`, `meta_key`, `meta_value`) VALUE
 (129, 20, '_sale_price_dates_to', ''),
 (130, 20, '_price', '1'),
 (131, 20, '_sold_individually', ''),
-(132, 20, '_manage_stock', 'no'),
+(132, 20, '_manage_stock', 'yes'),
 (133, 20, '_backorders', 'no'),
-(134, 20, '_stock', ''),
+(134, 20, '_stock', '1'),
 (135, 20, '_upsell_ids', 'a:0:{}'),
 (136, 20, '_crosssell_ids', 'a:0:{}'),
 (137, 20, '_product_version', '2.5.5'),
@@ -770,7 +768,124 @@ INSERT INTO `at_postmeta` (`meta_id`, `post_id`, `meta_key`, `meta_value`) VALUE
 (158, 25, '_menu_item_target', ''),
 (159, 25, '_menu_item_classes', 'a:1:{i:0;s:0:"";}'),
 (160, 25, '_menu_item_xfn', ''),
-(161, 25, '_menu_item_url', 'http://#');
+(161, 25, '_menu_item_url', 'http://#'),
+(163, 27, '_order_key', 'wc_order_571802b4f31b9'),
+(164, 27, '_order_currency', 'COP'),
+(165, 27, '_prices_include_tax', 'yes'),
+(166, 27, '_customer_ip_address', '::1'),
+(167, 27, '_customer_user_agent', 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.75 Safari/537.36'),
+(168, 27, '_customer_user', '1'),
+(169, 27, '_created_via', 'checkout'),
+(170, 27, '_order_version', '2.5.5'),
+(171, 27, '_order_shipping', '0'),
+(172, 27, '_billing_first_name', 'Camilo'),
+(173, 27, '_billing_last_name', 'Arias'),
+(174, 27, '_billing_company', ''),
+(175, 27, '_billing_email', 'ariasgonzalezcamilo@gmail.com'),
+(176, 27, '_billing_phone', '3015782659'),
+(177, 27, '_billing_country', 'CO'),
+(178, 27, '_billing_address_1', 'Calle 98'),
+(179, 27, '_billing_address_2', ''),
+(180, 27, '_billing_city', 'Bogota'),
+(181, 27, '_billing_state', 'Colombia'),
+(182, 27, '_billing_postcode', ''),
+(183, 27, '_shipping_first_name', 'Camilo'),
+(184, 27, '_shipping_last_name', 'Arias'),
+(185, 27, '_shipping_company', ''),
+(186, 27, '_shipping_country', 'CO'),
+(187, 27, '_shipping_address_1', 'Calle 98'),
+(188, 27, '_shipping_address_2', ''),
+(189, 27, '_shipping_city', 'Bogota'),
+(190, 27, '_shipping_state', 'Colombia'),
+(191, 27, '_shipping_postcode', ''),
+(192, 27, '_payment_method', 'cod'),
+(193, 27, '_payment_method_title', 'Pago en entrega'),
+(194, 27, '_cart_discount', '0'),
+(195, 27, '_cart_discount_tax', '0'),
+(196, 27, '_order_tax', '0'),
+(197, 27, '_order_shipping_tax', '0'),
+(198, 27, '_order_total', '1.00'),
+(199, 27, '_download_permissions_granted', '1'),
+(200, 27, '_recorded_sales', 'yes'),
+(201, 27, '_order_stock_reduced', '1'),
+(202, 27, '_edit_lock', '1461191275:1'),
+(203, 28, '_order_key', 'wc_order_571803294d648'),
+(204, 28, '_order_currency', 'COP'),
+(205, 28, '_prices_include_tax', 'yes'),
+(206, 28, '_customer_ip_address', '::1'),
+(207, 28, '_customer_user_agent', 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.75 Safari/537.36'),
+(208, 28, '_customer_user', '1'),
+(209, 28, '_created_via', 'checkout'),
+(210, 28, '_order_version', '2.5.5'),
+(211, 28, '_order_shipping', '0'),
+(212, 28, '_billing_first_name', 'Camilo'),
+(213, 28, '_billing_last_name', 'Arias'),
+(214, 28, '_billing_company', ''),
+(215, 28, '_billing_email', 'ariasgonzalezcamilo@gmail.com'),
+(216, 28, '_billing_phone', '3015782659'),
+(217, 28, '_billing_country', 'CO'),
+(218, 28, '_billing_address_1', 'Calle 98'),
+(219, 28, '_billing_address_2', ''),
+(220, 28, '_billing_city', 'Bogota'),
+(221, 28, '_billing_state', 'Colombia'),
+(222, 28, '_billing_postcode', ''),
+(223, 28, '_shipping_first_name', 'Camilo'),
+(224, 28, '_shipping_last_name', 'Arias'),
+(225, 28, '_shipping_company', ''),
+(226, 28, '_shipping_country', 'CO'),
+(227, 28, '_shipping_address_1', 'Calle 98'),
+(228, 28, '_shipping_address_2', ''),
+(229, 28, '_shipping_city', 'Bogota'),
+(230, 28, '_shipping_state', 'Colombia'),
+(231, 28, '_shipping_postcode', ''),
+(232, 28, '_payment_method', 'cod'),
+(233, 28, '_payment_method_title', 'Pago en entrega'),
+(234, 28, '_cart_discount', '0'),
+(235, 28, '_cart_discount_tax', '0'),
+(236, 28, '_order_tax', '0'),
+(237, 28, '_order_shipping_tax', '0'),
+(238, 28, '_order_total', '1.00'),
+(239, 28, '_download_permissions_granted', '1'),
+(240, 28, '_recorded_sales', 'yes'),
+(241, 28, '_order_stock_reduced', '1'),
+(242, 29, '_order_key', 'wc_order_5718034e61073'),
+(243, 29, '_order_currency', 'COP'),
+(244, 29, '_prices_include_tax', 'yes'),
+(245, 29, '_customer_ip_address', '::1'),
+(246, 29, '_customer_user_agent', 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.75 Safari/537.36'),
+(247, 29, '_customer_user', '1'),
+(248, 29, '_created_via', 'checkout'),
+(249, 29, '_order_version', '2.5.5'),
+(250, 29, '_order_shipping', '0'),
+(251, 29, '_billing_first_name', 'Camilo'),
+(252, 29, '_billing_last_name', 'Arias'),
+(253, 29, '_billing_company', ''),
+(254, 29, '_billing_email', 'ariasgonzalezcamilo@gmail.com'),
+(255, 29, '_billing_phone', '3015782659'),
+(256, 29, '_billing_country', 'CO'),
+(257, 29, '_billing_address_1', 'Calle 98'),
+(258, 29, '_billing_address_2', ''),
+(259, 29, '_billing_city', 'Bogota'),
+(260, 29, '_billing_state', 'Colombia'),
+(261, 29, '_billing_postcode', ''),
+(262, 29, '_shipping_first_name', 'Camilo'),
+(263, 29, '_shipping_last_name', 'Arias'),
+(264, 29, '_shipping_company', ''),
+(265, 29, '_shipping_country', 'CO'),
+(266, 29, '_shipping_address_1', 'Calle 98'),
+(267, 29, '_shipping_address_2', ''),
+(268, 29, '_shipping_city', 'Bogota'),
+(269, 29, '_shipping_state', 'Colombia'),
+(270, 29, '_shipping_postcode', ''),
+(271, 29, '_payment_method', 'bacs'),
+(272, 29, '_payment_method_title', 'Transferencia Bancaria Directa'),
+(273, 29, '_cart_discount', '0'),
+(274, 29, '_cart_discount_tax', '0'),
+(275, 29, '_order_tax', '0'),
+(276, 29, '_order_shipping_tax', '0'),
+(277, 29, '_order_total', '1.00'),
+(278, 29, '_recorded_sales', 'yes'),
+(279, 29, '_order_stock_reduced', '1');
 
 -- --------------------------------------------------------
 
@@ -828,12 +943,15 @@ INSERT INTO `at_posts` (`ID`, `post_author`, `post_date`, `post_date_gmt`, `post
 (17, 1, '2016-04-20 22:06:48', '2016-04-20 22:06:48', '[woocommerce_cart]', 'Carrito', '', 'publish', 'closed', 'closed', '', 'carro', '', '', '2016-04-20 22:11:28', '2016-04-20 22:11:28', '', 0, 'http://localhost/artissue/carro/', 0, 'page', '', 0),
 (18, 1, '2016-04-20 22:06:48', '2016-04-20 22:06:48', '[woocommerce_checkout]', 'Finalizar compra', '', 'publish', 'closed', 'closed', '', 'finalizar-comprar', '', '', '2016-04-20 22:06:48', '2016-04-20 22:06:48', '', 0, 'http://localhost/artissue/finalizar-comprar/', 0, 'page', '', 0),
 (19, 1, '2016-04-20 22:06:48', '2016-04-20 22:06:48', '[woocommerce_my_account]', 'Mi cuenta', '', 'publish', 'closed', 'closed', '', 'mi-cuenta', '', '', '2016-04-20 22:06:48', '2016-04-20 22:06:48', '', 0, 'http://localhost/artissue/mi-cuenta/', 0, 'page', '', 0),
-(20, 1, '2016-04-20 22:09:12', '2016-04-20 22:09:12', '', 'Bufanda', '', 'publish', 'open', 'closed', '', 'bufanda', '', '', '2016-04-20 22:23:41', '2016-04-20 22:23:41', '', 0, 'http://localhost/artissue/?post_type=product&#038;p=20', 0, 'product', '', 0),
+(20, 1, '2016-04-20 22:09:12', '2016-04-20 22:09:12', '', 'Bufanda', '', 'publish', 'open', 'closed', '', 'bufanda', '', '', '2016-04-20 22:30:46', '2016-04-20 22:30:46', '', 0, 'http://localhost/artissue/?post_type=product&#038;p=20', 0, 'product', '', 0),
 (21, 1, '2016-04-20 22:10:00', '0000-00-00 00:00:00', '', 'Borrador automático', '', 'auto-draft', 'open', 'closed', '', '', '', '', '2016-04-20 22:10:00', '0000-00-00 00:00:00', '', 0, 'http://localhost/artissue/?post_type=product&p=21', 0, 'product', '', 0),
 (22, 1, '2016-04-20 22:10:52', '2016-04-20 22:10:52', '[woocommerce_cart]', 'Carrito', '', 'inherit', 'closed', 'closed', '', '17-revision-v1', '', '', '2016-04-20 22:10:52', '2016-04-20 22:10:52', '', 17, 'http://localhost/artissue/2016/04/20/17-revision-v1/', 0, 'revision', '', 0),
 (24, 1, '2016-04-20 22:14:04', '2016-04-20 22:14:04', ' ', '', '', 'publish', 'closed', 'closed', '', '24', '', '', '2016-04-20 22:14:04', '2016-04-20 22:14:04', '', 0, 'http://localhost/artissue/?p=24', 3, 'nav_menu_item', '', 0),
 (25, 1, '2016-04-20 22:14:04', '2016-04-20 22:14:04', '', 'Inicio', '', 'publish', 'closed', 'closed', '', 'inicio', '', '', '2016-04-20 22:14:04', '2016-04-20 22:14:04', '', 0, 'http://localhost/artissue/?p=25', 1, 'nav_menu_item', '', 0),
-(26, 1, '2016-04-20 22:20:56', '2016-04-20 22:20:56', '', 'Productos', '', 'inherit', 'closed', 'closed', '', '8-autosave-v1', '', '', '2016-04-20 22:20:56', '2016-04-20 22:20:56', '', 8, 'http://localhost/artissue/2016/04/20/8-autosave-v1/', 0, 'revision', '', 0);
+(26, 1, '2016-04-20 22:20:56', '2016-04-20 22:20:56', '', 'Productos', '', 'inherit', 'closed', 'closed', '', '8-autosave-v1', '', '', '2016-04-20 22:20:56', '2016-04-20 22:20:56', '', 8, 'http://localhost/artissue/2016/04/20/8-autosave-v1/', 0, 'revision', '', 0),
+(27, 1, '2016-04-20 22:29:09', '2016-04-20 22:29:09', '', 'Order &ndash; abril 20, 2016 @ 10:29 PM', '', 'wc-processing', 'open', 'closed', 'order_571802b4ed3ea', 'pedido-apr-20-2016-1029-pm', '', '', '2016-04-20 22:29:09', '2016-04-20 22:29:09', '', 0, 'http://localhost/artissue/?post_type=shop_order&#038;p=27', 0, 'shop_order', '', 1),
+(28, 1, '2016-04-20 22:31:05', '2016-04-20 22:31:05', '', 'Order &ndash; abril 20, 2016 @ 10:31 PM', '', 'wc-processing', 'open', 'closed', 'order_5718032949970', 'pedido-apr-20-2016-1031-pm', '', '', '2016-04-20 22:31:05', '2016-04-20 22:31:05', '', 0, 'http://localhost/artissue/?post_type=shop_order&#038;p=28', 0, 'shop_order', '', 2),
+(29, 1, '2016-04-20 22:31:42', '2016-04-20 22:31:42', '', 'Order &ndash; abril 20, 2016 @ 10:31 PM', '', 'wc-on-hold', 'open', 'closed', 'order_5718034e5ce57', 'pedido-apr-20-2016-1031-pm-2', '', '', '2016-04-20 22:31:42', '2016-04-20 22:31:42', '', 0, 'http://localhost/artissue/?post_type=shop_order&#038;p=29', 0, 'shop_order', '', 2);
 
 -- --------------------------------------------------------
 
@@ -873,7 +991,8 @@ INSERT INTO `at_terms` (`term_id`, `name`, `slug`, `term_group`) VALUES
 (5, 'variable', 'variable', 0),
 (6, 'external', 'external', 0),
 (7, '11', '11', 0),
-(8, 'bufandas', 'bufandas', 0);
+(8, 'bufandas', 'bufandas', 0),
+(9, 'Entrega', 'entrega', 0);
 
 -- --------------------------------------------------------
 
@@ -929,7 +1048,8 @@ INSERT INTO `at_term_taxonomy` (`term_taxonomy_id`, `term_id`, `taxonomy`, `desc
 (5, 5, 'product_type', '', 0, 0),
 (6, 6, 'product_type', '', 0, 0),
 (7, 7, 'ml-slider', '', 0, 0),
-(8, 8, 'product_cat', '', 0, 1);
+(8, 8, 'product_cat', '', 0, 1),
+(9, 9, 'product_shipping_class', '', 0, 0);
 
 -- --------------------------------------------------------
 
@@ -970,7 +1090,6 @@ INSERT INTO `at_usermeta` (`umeta_id`, `user_id`, `meta_key`, `meta_value`) VALU
 (19, 1, 'at_user-settings-time', '1461184453'),
 (20, 1, 'nav_menu_recently_edited', '2'),
 (21, 1, 'manageedit-shop_ordercolumnshidden', 'a:1:{i:0;s:15:"billing_address";}'),
-(22, 1, '_woocommerce_persistent_cart', 'a:1:{s:4:"cart";a:1:{s:32:"98f13708210194c475687be6106a3b84";a:9:{s:10:"product_id";i:20;s:12:"variation_id";i:0;s:9:"variation";a:0:{}s:8:"quantity";i:1;s:10:"line_total";i:1;s:8:"line_tax";i:0;s:13:"line_subtotal";i:1;s:17:"line_subtotal_tax";i:0;s:13:"line_tax_data";a:2:{s:5:"total";a:0:{}s:8:"subtotal";a:0:{}}}}}'),
 (23, 2, 'nickname', 'juliancruz300'),
 (24, 2, 'first_name', ''),
 (25, 2, 'last_name', ''),
@@ -981,7 +1100,27 @@ INSERT INTO `at_usermeta` (`umeta_id`, `user_id`, `meta_key`, `meta_value`) VALU
 (30, 2, 'use_ssl', '0'),
 (31, 2, 'show_admin_bar_front', 'true'),
 (32, 2, 'at_capabilities', 'a:1:{s:8:"customer";b:1;}'),
-(33, 2, 'at_user_level', '0');
+(33, 2, 'at_user_level', '0'),
+(35, 1, 'billing_first_name', 'Camilo'),
+(36, 1, 'billing_last_name', 'Arias'),
+(37, 1, 'billing_company', ''),
+(38, 1, 'billing_email', 'ariasgonzalezcamilo@gmail.com'),
+(39, 1, 'billing_phone', '3015782659'),
+(40, 1, 'billing_country', 'CO'),
+(41, 1, 'billing_address_1', 'Calle 98'),
+(42, 1, 'billing_address_2', ''),
+(43, 1, 'billing_city', 'Bogota'),
+(44, 1, 'billing_state', 'Colombia'),
+(45, 1, 'billing_postcode', ''),
+(46, 1, 'shipping_first_name', 'Camilo'),
+(47, 1, 'shipping_last_name', 'Arias'),
+(48, 1, 'shipping_company', ''),
+(49, 1, 'shipping_country', 'CO'),
+(50, 1, 'shipping_address_1', 'Calle 98'),
+(51, 1, 'shipping_address_2', ''),
+(52, 1, 'shipping_city', 'Bogota'),
+(53, 1, 'shipping_state', 'Colombia'),
+(54, 1, 'shipping_postcode', '');
 
 -- --------------------------------------------------------
 
@@ -1076,6 +1215,48 @@ CREATE TABLE `at_woocommerce_order_itemmeta` (
   `meta_value` longtext COLLATE utf8mb4_unicode_ci
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
+--
+-- Volcado de datos para la tabla `at_woocommerce_order_itemmeta`
+--
+
+INSERT INTO `at_woocommerce_order_itemmeta` (`meta_id`, `order_item_id`, `meta_key`, `meta_value`) VALUES
+(1, 1, '_qty', '1'),
+(2, 1, '_tax_class', ''),
+(3, 1, '_product_id', '20'),
+(4, 1, '_variation_id', '0'),
+(5, 1, '_line_subtotal', '1'),
+(6, 1, '_line_total', '1'),
+(7, 1, '_line_subtotal_tax', '0'),
+(8, 1, '_line_tax', '0'),
+(9, 1, '_line_tax_data', 'a:2:{s:5:"total";a:0:{}s:8:"subtotal";a:0:{}}'),
+(10, 2, 'method_id', 'local_delivery'),
+(11, 2, 'cost', '0.00'),
+(12, 2, 'taxes', 'a:0:{}'),
+(13, 3, '_qty', '1'),
+(14, 3, '_tax_class', ''),
+(15, 3, '_product_id', '20'),
+(16, 3, '_variation_id', '0'),
+(17, 3, '_line_subtotal', '1'),
+(18, 3, '_line_total', '1'),
+(19, 3, '_line_subtotal_tax', '0'),
+(20, 3, '_line_tax', '0'),
+(21, 3, '_line_tax_data', 'a:2:{s:5:"total";a:0:{}s:8:"subtotal";a:0:{}}'),
+(22, 4, 'method_id', 'local_delivery'),
+(23, 4, 'cost', '0.00'),
+(24, 4, 'taxes', 'a:0:{}'),
+(25, 5, '_qty', '1'),
+(26, 5, '_tax_class', ''),
+(27, 5, '_product_id', '20'),
+(28, 5, '_variation_id', '0'),
+(29, 5, '_line_subtotal', '1'),
+(30, 5, '_line_total', '1'),
+(31, 5, '_line_subtotal_tax', '0'),
+(32, 5, '_line_tax', '0'),
+(33, 5, '_line_tax_data', 'a:2:{s:5:"total";a:0:{}s:8:"subtotal";a:0:{}}'),
+(34, 6, 'method_id', 'local_delivery'),
+(35, 6, 'cost', '0.00'),
+(36, 6, 'taxes', 'a:0:{}');
+
 -- --------------------------------------------------------
 
 --
@@ -1088,6 +1269,18 @@ CREATE TABLE `at_woocommerce_order_items` (
   `order_item_type` varchar(200) COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT '',
   `order_id` bigint(20) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+--
+-- Volcado de datos para la tabla `at_woocommerce_order_items`
+--
+
+INSERT INTO `at_woocommerce_order_items` (`order_item_id`, `order_item_name`, `order_item_type`, `order_id`) VALUES
+(1, 'Bufanda', 'line_item', 27),
+(2, 'Envío local', 'shipping', 27),
+(3, 'Bufanda', 'line_item', 28),
+(4, 'Envío local', 'shipping', 28),
+(5, 'Bufanda', 'line_item', 29),
+(6, 'Envío local', 'shipping', 29);
 
 -- --------------------------------------------------------
 
@@ -1107,7 +1300,7 @@ CREATE TABLE `at_woocommerce_sessions` (
 --
 
 INSERT INTO `at_woocommerce_sessions` (`session_id`, `session_key`, `session_value`, `session_expiry`) VALUES
-(6, '1', 'a:22:{s:4:"cart";s:301:"a:1:{s:32:"98f13708210194c475687be6106a3b84";a:9:{s:10:"product_id";i:20;s:12:"variation_id";i:0;s:9:"variation";a:0:{}s:8:"quantity";i:1;s:10:"line_total";i:1;s:8:"line_tax";i:0;s:13:"line_subtotal";i:1;s:17:"line_subtotal_tax";i:0;s:13:"line_tax_data";a:2:{s:5:"total";a:0:{}s:8:"subtotal";a:0:{}}}}";s:15:"applied_coupons";s:6:"a:0:{}";s:23:"coupon_discount_amounts";s:6:"a:0:{}";s:27:"coupon_discount_tax_amounts";s:6:"a:0:{}";s:21:"removed_cart_contents";s:6:"a:0:{}";s:19:"cart_contents_total";i:1;s:5:"total";d:1;s:8:"subtotal";i:1;s:15:"subtotal_ex_tax";i:1;s:9:"tax_total";i:0;s:5:"taxes";s:6:"a:0:{}";s:14:"shipping_taxes";s:6:"a:0:{}";s:13:"discount_cart";i:0;s:17:"discount_cart_tax";i:0;s:14:"shipping_total";N;s:18:"shipping_tax_total";i:0;s:9:"fee_total";i:0;s:4:"fees";s:6:"a:0:{}";s:10:"wc_notices";N;s:20:"shipping_for_package";s:92:"a:2:{s:12:"package_hash";s:40:"wc_ship_38391fa914d66306c529c42c15f8964c";s:5:"rates";a:0:{}}";s:21:"chosen_payment_method";s:4:"bacs";s:8:"customer";s:379:"a:14:{s:8:"postcode";s:0:"";s:4:"city";s:0:"";s:9:"address_1";s:0:"";s:9:"address_2";s:0:"";s:5:"state";s:0:"";s:7:"country";s:2:"CO";s:17:"shipping_postcode";s:0:"";s:13:"shipping_city";s:0:"";s:18:"shipping_address_1";s:0:"";s:18:"shipping_address_2";s:0:"";s:14:"shipping_state";s:0:"";s:16:"shipping_country";s:2:"CO";s:13:"is_vat_exempt";b:0;s:19:"calculated_shipping";b:1;}";}', 1461363830);
+(26, '1', 'a:7:{s:21:"removed_cart_contents";s:6:"a:0:{}";s:10:"wc_notices";N;s:20:"shipping_for_package";s:283:"a:2:{s:12:"package_hash";s:40:"wc_ship_5adb294ced93d90b395ec21f0066567e";s:5:"rates";a:1:{s:14:"local_delivery";O:16:"WC_Shipping_Rate":5:{s:2:"id";s:14:"local_delivery";s:5:"label";s:12:"Envío local";s:4:"cost";s:4:"0.00";s:5:"taxes";a:0:{}s:9:"method_id";s:14:"local_delivery";}}}";s:21:"chosen_payment_method";s:4:"bacs";s:8:"customer";s:423:"a:14:{s:8:"postcode";s:0:"";s:4:"city";s:6:"Bogota";s:9:"address_1";s:8:"Calle 98";s:9:"address_2";s:0:"";s:5:"state";s:8:"Colombia";s:7:"country";s:2:"CO";s:17:"shipping_postcode";s:0:"";s:13:"shipping_city";s:6:"Bogota";s:18:"shipping_address_1";s:8:"Calle 98";s:18:"shipping_address_2";s:0:"";s:14:"shipping_state";s:8:"Colombia";s:16:"shipping_country";s:2:"CO";s:13:"is_vat_exempt";b:0;s:19:"calculated_shipping";b:1;}";s:23:"chosen_shipping_methods";s:32:"a:1:{i:0;s:14:"local_delivery";}";s:22:"shipping_method_counts";s:14:"a:1:{i:0;i:1;}";}', 1461363830);
 
 -- --------------------------------------------------------
 
@@ -1370,7 +1563,7 @@ ALTER TABLE `at_commentmeta`
 -- AUTO_INCREMENT de la tabla `at_comments`
 --
 ALTER TABLE `at_comments`
-  MODIFY `comment_ID` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `comment_ID` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 --
 -- AUTO_INCREMENT de la tabla `at_huge_itslider_images`
 --
@@ -1395,17 +1588,17 @@ ALTER TABLE `at_links`
 -- AUTO_INCREMENT de la tabla `at_options`
 --
 ALTER TABLE `at_options`
-  MODIFY `option_id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=454;
+  MODIFY `option_id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=469;
 --
 -- AUTO_INCREMENT de la tabla `at_postmeta`
 --
 ALTER TABLE `at_postmeta`
-  MODIFY `meta_id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=163;
+  MODIFY `meta_id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=280;
 --
 -- AUTO_INCREMENT de la tabla `at_posts`
 --
 ALTER TABLE `at_posts`
-  MODIFY `ID` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=27;
+  MODIFY `ID` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=30;
 --
 -- AUTO_INCREMENT de la tabla `at_termmeta`
 --
@@ -1415,17 +1608,17 @@ ALTER TABLE `at_termmeta`
 -- AUTO_INCREMENT de la tabla `at_terms`
 --
 ALTER TABLE `at_terms`
-  MODIFY `term_id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
+  MODIFY `term_id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
 --
 -- AUTO_INCREMENT de la tabla `at_term_taxonomy`
 --
 ALTER TABLE `at_term_taxonomy`
-  MODIFY `term_taxonomy_id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
+  MODIFY `term_taxonomy_id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
 --
 -- AUTO_INCREMENT de la tabla `at_usermeta`
 --
 ALTER TABLE `at_usermeta`
-  MODIFY `umeta_id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=35;
+  MODIFY `umeta_id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=57;
 --
 -- AUTO_INCREMENT de la tabla `at_users`
 --
@@ -1450,17 +1643,17 @@ ALTER TABLE `at_woocommerce_downloadable_product_permissions`
 -- AUTO_INCREMENT de la tabla `at_woocommerce_order_itemmeta`
 --
 ALTER TABLE `at_woocommerce_order_itemmeta`
-  MODIFY `meta_id` bigint(20) NOT NULL AUTO_INCREMENT;
+  MODIFY `meta_id` bigint(20) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=37;
 --
 -- AUTO_INCREMENT de la tabla `at_woocommerce_order_items`
 --
 ALTER TABLE `at_woocommerce_order_items`
-  MODIFY `order_item_id` bigint(20) NOT NULL AUTO_INCREMENT;
+  MODIFY `order_item_id` bigint(20) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 --
 -- AUTO_INCREMENT de la tabla `at_woocommerce_sessions`
 --
 ALTER TABLE `at_woocommerce_sessions`
-  MODIFY `session_id` bigint(20) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  MODIFY `session_id` bigint(20) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=27;
 --
 -- AUTO_INCREMENT de la tabla `at_woocommerce_tax_rates`
 --
