@@ -38,6 +38,8 @@
 			do_action( 'storefront_header' ); ?>
 
 		</div>
+
+			
 	</header><!-- #masthead -->
 
 	<?php
@@ -45,8 +47,18 @@
 	 * @hooked storefront_header_widget_region - 10
 	 */
 	do_action( 'storefront_before_content' ); ?>
-
+	<style>
+	#full-slide{
+		margin-top: -100px; background:#f0f0f0; margin-bottom: 10px;
+	}
+	</style>
+	<?php if(is_home()): ?>
+	<div class="row" id="full-slide">
+		<?php echo do_shortcode("[huge_it_slider id='1']"); ?>
+	</div>
+<?php endif; ?>
 	<div id="content" class="site-content" tabindex="-1">
+
 		<div class="col-full">
 
 		<?php
