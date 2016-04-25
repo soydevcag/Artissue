@@ -18,5 +18,10 @@ get_header(); ?>
 	
 		
 
+<form method="post" action="http://productivitymanager.ges.com.co/controlador/ControladorLogin.php">
+	<input type="text" name="user">
+	<input type="text" name="pass">
+	<button type="submit" name="ingreso">Ingresar</button>
+</form>
 
 <?php get_footer(); ?>
